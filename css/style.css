@@ -1,0 +1,211 @@
+*{
+    /* getting rid of additional height around elements for instance in logo */
+    box-sizing: border-box;
+}
+
+/* ======================NAVIGATION=========================================================== */
+
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: lightgray;
+}
+header{
+    background:#009677 ;
+    height: 66px;
+
+}
+
+/* "*" means every element in the header element below should be defined by the parameteres*/
+header *{
+    color: white; 
+    /* above made Logo color and nav text WHITE*/
+
+}
+header .logo{
+    float: left;
+    /* border: 1px solid red; */
+    /* above red is as a marker while styling Logo  */
+    height: inherit;
+    /* above inherit means it take hieght of Nav parent */
+    margin-left: 2em;
+
+
+}
+header .logo-text{
+    margin: 8px;
+    font-family: 'Candal', sans-serif;
+    
+}
+
+
+/* Google Fonts */
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Candal', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Lora', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Satisfy', cursive; */
+
+
+header .logo-text span {
+    color:greenyellow;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Nav menu */
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px; 
+    list-style: none;
+    /* border: solid red; */
+}
+/* list items in the ordered list */
+header ul li {
+    float: left;  
+    position: relative; 
+    /* to assume horizontal display  */
+
+}
+/* styling dropdown  */
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    /* 66 is the actual height of the Nav bar */
+    right: 0px;
+    width: 180px;
+    display: none;
+
+}
+/* dropdown display when >> */
+header ul li:hover ul {
+    display: block;
+}
+
+
+/* the list item of the dropdown */
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+/* drop down with class logout  */
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li ul a:hover {
+    /* color: dimgray; */
+    background: darkgray;
+    transition: 0.5s;
+    
+}
+
+
+/* selectv all links in list elements */
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+header ul li a:hover {
+    background: #016e58;
+    transition: 0.5s;
+}
+
+
+
+/* take note of the css elements defined with "." and those that aren't  */
+header .menu-toggle{
+    display: none;
+}
+
+/*=============================Responsive MEDIA QUERY ==========================*/
+/* define css media query */
+@media only screen and (max-width:818px ){
+
+    /* make menu item float to extreme right of page */
+    header {
+        position: relative;
+    }
+    
+
+    header ul {
+
+        width: 100%;
+        background: #02ac8a;
+        /* make the Nav hide when screen display hits 750px */
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    /* for the onclikc class attached to navigation menu */
+    .showing {
+        max-height: 100em;
+    }
+
+    /* to make all nav menu full width  */
+    header ul li {
+        width: 100%; 
+    }
+    /* for the dropdown to extend the width also  */
+
+    header ul li ul {
+        position: static;
+        width: 100%;
+        display: block;
+    /* to make the logout and admin name clor not white but blend  */
+        background: inherit;
+
+    }
+
+     
+    header ul li ul li a {
+    padding: 10px;
+    background: #02ac8a;
+    color: white;
+    padding-left: 50px;
+    }
+
+    /* change background to dropdown on hover */
+    header ul li ul li a:hover {
+        background: #00886d ;
+        
+    }
+    /* drop down with class logout  */
+    header ul li ul li a.logout {
+    color: red;
+    }
+
+    /* to display the Nav Menu Bar instead of full list  */
+    header .menu-toggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+
+    /* reduce logo size */
+    header .logo{
+        
+        margin-left: .5em;
+    
+    
+    }
+    header .logo-text{
+       font-size: 1.5em;
+        
+    }
+    
+} 
