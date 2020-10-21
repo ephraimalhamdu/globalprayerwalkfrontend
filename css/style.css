@@ -162,7 +162,7 @@ header .menu-toggle{
 .post-slider .next {
 position: absolute;
 top: 50%;
-right: 30px;
+right: 20px;
 font-size: 2em;
 color: #006669;
 cursor: pointer;
@@ -170,7 +170,7 @@ cursor: pointer;
 .post-slider .prev {
     position: absolute;
     top: 50%;
-    left:30px;
+    left:20px;
     font-size: 2em;
     color: #006669;
     cursor: pointer;
