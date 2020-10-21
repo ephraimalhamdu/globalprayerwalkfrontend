@@ -3,14 +3,24 @@
     box-sizing: border-box;
 }
 
-/* ======================NAVIGATION=========================================================== */
-
-
+/* ======================================NAVIGATION================================================= */
 
 body{
     padding: 0px;
     margin: 0px;
-    background-color: lightgray;
+    background-color: #e6e3e3;
+}
+
+h1,h2,h3,h4,h5, h6 {
+    /* font-family: 'Lora', serif; */
+    font-family: 'Candal', sans-serif;
+    color: #444;
+    margin: 5px;
+}
+/* all anchor tags  */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 header{
     background:#009677 ;
@@ -78,6 +88,8 @@ header ul li ul {
     right: 0px;
     width: 180px;
     display: none;
+    /* to fix the dropdown that is covered by d slidder */
+    z-index: 88888;
 
 }
 /* dropdown display when >> */
@@ -123,13 +135,111 @@ header ul li a:hover {
     transition: 0.5s;
 }
 
-
-
 /* take note of the css elements defined with "." and those that aren't  */
 header .menu-toggle{
     display: none;
 }
 
+/* hover over the slider card text  */
+.page-wrapper a:hover {
+     color: rgb(11, 116, 11);
+}
+
+
+/* =================================Post Slider CAROSEL========================== */
+.post-slider{
+    
+    position: relative;
+}
+.post-slider .slider-title {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    /* color for the trending post title  */
+    color: gray;
+    margin: 30px auto;
+}
+
+.post-slider .next {
+position: absolute;
+top: 50%;
+right: 30px;
+font-size: 2em;
+color: #006669;
+cursor: pointer;
+}
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left:30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+    }
+
+.post-slider .post-wrapper{
+    
+    overflow: hidden;
+    width: 84%;
+    height: 350px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px auto;
+}
+.post-slider .post-wrapper .post {
+    background: white;
+    border-radius: 10px; 
+    /* display horizontaly */
+    display: inline-block;
+    margin: 0px 10px;
+    width: 300px;
+    height: 330px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+/* the text info  */
+.post-slider .post-wrapper .post .post-info {
+    height: 130px;
+   
+    padding: 0px 10px;
+
+
+}
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* careful not to confuse this with header above  */
 /*=============================Responsive MEDIA QUERY ==========================*/
 /* define css media query */
 @media only screen and (max-width:818px ){
