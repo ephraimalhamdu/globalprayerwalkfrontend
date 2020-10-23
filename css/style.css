@@ -22,6 +22,38 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* to clear float e.g in content section ... it gives it its bottom boarder alignment*/
+.clearfix::after {
+    content:'' ;
+    display: block;
+    clear: both;
+}
+/* search box */
+.text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    color: grey;
+    font-size: .8em;
+    line-height: 1.5rem;
+    border: 1px solid lightgrey;
+    font-family: 'Comfortaa', cursive;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background: #009677;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn:hover {
+    color: white !important;
+    background: #016e58;
+}
+
 header{
     background:#009677 ;
     height: 66px;
@@ -155,7 +187,8 @@ header .menu-toggle{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     /* color for the trending post title  */
-    color: gray;
+    color: rgb(105, 103, 103);
+    
     margin: 30px auto;
 }
 
@@ -204,7 +237,8 @@ cursor: pointer;
 }
 .post-slider .post-wrapper .post .slider-image {
     width: 100%;
-    height: 200px;
+    /* height: 200px; auto makes img responsive*/
+    height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -212,14 +246,112 @@ cursor: pointer;
  
 
 
+/* =================================CONTENT SECTION recent post ========================== */
+.content {
+    width: 90%;
+    margin: 30px auto 30px;
+   
+
+}
+.content .main-content {
+    width: 70%;
+    float: left;
+    
 
 
+}
+.content .main-content .recent-post-title {
+    margin: 20px;
+
+}
+.content .main-content .post {
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 2.5px;
+    /* gives img start space  */
+    padding-left: 10px;
+    background: white;
+    position: relative;
+}
+.content .main-content .post .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border:1px solid #009677 ;
+    background: transparent;
+    border-radius: 0px;
+    color: #009677 !important;
+}
+.content .main-content .post .read-more:hover {
+    background: #009677;
+    color: white !important;
+    transition: .25s;
+}
+
+/* working on the post images to align to ui */
+.content .main-content .post .post-image {
+    /* width: 100%;
+    height: auto; */ 
+    /* the above makes img responsive */
+    width: 40%;
+    /* height:100%; */
+    height: auto;
+    float: left;
+    border-radius: 5px;
+    margin: 20px auto;
+    
+}
+.content .main-content .post .post-preview {
+    width: 60%;
+    float: right;
+    padding: 10px;
 
 
+}
 
+.content .sidebar {
+    width: 30%;
+    float: left;
+    
+    height: 300px;
 
+}
+.content .sidebar .section {
+    background: white;
+    padding:20px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
+.content .sidebar .section .section-title {
+    margin: 10px 0px 10px 0px;
+}
 
+/* note no space btw section and search as seen below */
+.content .sidebar .section.search {
+    margin-top: 80px;
+    border-radius: 2.5px;
+}
+.content .sidebar .section.topics ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    border-top: 1px solid lightgray;
+}
+
+.content .sidebar .section.topics ul li a {
+    border-bottom: 1px solid lightgray;
+    display: block;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.3s;
+}
+.content .sidebar .section.topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+
+}
 
 
 
@@ -242,7 +374,7 @@ cursor: pointer;
 /* careful not to confuse this with header above  */
 /*=============================Responsive MEDIA QUERY ==========================*/
 /* define css media query */
-@media only screen and (max-width:818px ){
+@media only screen and (max-width:900px ){
 
     /* make menu item float to extreme right of page */
     header {
