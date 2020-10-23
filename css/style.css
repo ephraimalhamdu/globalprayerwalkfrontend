@@ -5,8 +5,10 @@
 
 /* ======================================NAVIGATION================================================= */
 
-body{
+html, body {
     padding: 0px;
+    /* adjusting for sticky footer */
+    height: 100%;
     margin: 0px;
     background-color: #e6e3e3;
 }
@@ -40,6 +42,11 @@ a {
     line-height: 1.5rem;
     border: 1px solid lightgrey;
     font-family: 'Comfortaa', cursive;
+}
+.btn-big {
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    margin-top: 10px;
 }
 
 .btn {
@@ -170,6 +177,11 @@ header ul li a:hover {
 /* take note of the css elements defined with "." and those that aren't  */
 header .menu-toggle{
     display: none;
+}
+.page-wrapper {
+    /* to push footer to bottom of page */
+    min-height: 100%;
+
 }
 
 /* hover over the slider card text  */
@@ -352,6 +364,139 @@ cursor: pointer;
     transition: all 0.3s;
 
 }
+
+/* =================Footer========================== */
+
+.footer {
+    background: #003133;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content {
+    
+    height: 350px;
+    display: flex;
+
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: rgb(151, 151, 151);
+}
+
+.footer .footer-content .about p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    color: white;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 35px;
+    height: 31px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.footer .footer-content h1:hover {
+    color: white;
+    transition: all .3s;
+}
+
+
+.footer .footer-content .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+
+}
+.footer .footer-content .links ul a {
+    border-bottom: 1px solid lightgray;
+    display: block;
+    margin: 10px;
+    transition: all 0.3s;
+    font-family: 'Comfortaa', cursive;
+}
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+
+}
+
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+    
+
+}
+
+.footer .footer-content .contact-form .contact-input {
+margin-bottom:10px;
+color: #222121;
+background: white;
+line-height: 1.5rem;
+padding: .9rem 1.4rem;
+border: none;
+}
+.footer .footer-content .contact-form .contact-input:focus {
+    background: #ffffff;
+}
+
+.footer .footer-content .contact-form .contact-btn {
+    float: right;
+}
+
+.footer .footer-bottom {
+    background: #006853;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    /* to remain at the bootom */
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #02ac8a; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 12px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: all 0.3s;
+  }
+  
+  #myBtn:hover {
+    background-color: #006669; /* Add a dark-grey background on hover */
+    transition: 1.5s;
+    transition: all 0.3s;
+  }
 
 
 
