@@ -42,6 +42,9 @@ a {
     line-height: 1.5rem;
     border: 1px solid lightgrey;
     font-family: 'Comfortaa', cursive;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
 }
 .btn-big {
     padding: .7rem 1.3rem;
@@ -186,7 +189,7 @@ header .menu-toggle{
 
 /* hover over the slider card text  */
 .page-wrapper a:hover {
-     color: rgb(11, 116, 11);
+     color: rgb(0, 56, 0);
 }
 
 
@@ -197,7 +200,7 @@ header .menu-toggle{
 }
 .post-slider .slider-title {
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Candal', sans-serif;
     /* color for the trending post title  */
     color: rgb(105, 103, 103);
     
@@ -231,7 +234,7 @@ cursor: pointer;
 }
 .post-slider .post-wrapper .post {
     background: white;
-    border-radius: 10px; 
+    border-radius: 5px; 
     max-width: 100%;
     max-height: 100%;
     /* display horizontaly */
@@ -259,17 +262,21 @@ cursor: pointer;
     object-fit: cover;
     /* background-size: cover; */
     width: 100%;
-    
     height: 200px;
     
     /* height: 20vw; */
     
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
    
 
 }
  
+/* box-shadow 
+ -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+*/
 
 
 /* =================================CONTENT SECTION recent post ========================== */
@@ -330,6 +337,7 @@ cursor: pointer;
     float: left;
     border-radius: 5px;
     margin: 20px auto;
+   
     
 }
 .content .main-content .post .post-preview {
@@ -362,6 +370,9 @@ cursor: pointer;
 .content .sidebar .section.search {
     margin-top: 80px;
     border-radius: 2.5px;
+    /* -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black; */
 }
 .content .sidebar .section.topics ul {
     margin: 0px;
@@ -406,7 +417,7 @@ cursor: pointer;
 }
 
 .footer .footer-content .about p {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Lora', serif;
     font-size: 14px;
     color: white;
 }
@@ -450,7 +461,7 @@ cursor: pointer;
     display: block;
     margin: 10px;
     transition: all 0.3s;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Lora', serif;
 }
 .footer .footer-content .links ul a:hover {
     color: white;
@@ -487,11 +498,11 @@ border: none;
 
 .footer .footer-bottom {
     background: #006853;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Lora', serif;
     color: white;
     height: 50px;
     width: 100%;
-    font-size: 20px;
+    font-size: 10px;
     position: absolute;
     text-align: center;
     /* to remain at the bootom */
