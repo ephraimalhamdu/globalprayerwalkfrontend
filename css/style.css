@@ -322,11 +322,21 @@ cursor: pointer;
     /* end boxshadowing */
 
 } 
+/* single.html */
+.content .main-content.single .post-title {
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+/* font-family: 'Comfortaa', cursive; */
+
 
 .content .main-content .recent-post-title {
     margin: 20px;
 
 }
+
+
 .content .main-content .post {
     width: 95%;
     height: 270px;
@@ -341,6 +351,29 @@ cursor: pointer;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 }
+
+/* single.html */
+.content .popular .post {
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    padding-top:10px;
+
+}
+/* single.htnl */
+.content .popular .post img {
+    width: 75px;
+    height: 60px;
+    object-fit: cover;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+.post.clearfix .title h4{
+    
+    font-size: .8em;
+}  
+
 .content .main-content .post .read-more {
     position: absolute;
     bottom: 10px;
