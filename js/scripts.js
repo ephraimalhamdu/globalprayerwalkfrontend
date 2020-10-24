@@ -87,3 +87,15 @@ git remote add origin https://github.com/perfectephraim/globalprayerwalkfrontend
 git push -u origin main
                 
 */
+//loader
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+// end loader
