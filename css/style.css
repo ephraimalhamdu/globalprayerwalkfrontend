@@ -65,7 +65,7 @@ a {
 }
 
 header{
-    background:#009677 ;
+    background:#006853 ;
     height: 66px;
 
 }
@@ -104,7 +104,7 @@ font-family: 'Satisfy', cursive; */
 
 header .logo-text span {
     color:greenyellow;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 /* Nav menu */
@@ -173,7 +173,7 @@ header ul li a {
     font-family: 'Quicksand', sans-serif;
 }
 header ul li a:hover {
-    background: #016e58;
+    background: #004437;
     transition: 0.5s;
 }
 
@@ -469,6 +469,9 @@ cursor: pointer;
     height: 400px;
     position: relative;
     
+}
+.footer-section.about .logo-text span {
+    font-family: 'Comfortaa', cursive;
 }
 
 .footer .footer-content {
